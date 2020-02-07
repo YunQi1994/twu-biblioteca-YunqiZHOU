@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/Test.java" beforeDir="false" />
+    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="Books class">
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Books.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -209,10 +209,10 @@
     </state>
     <state x="2423" y="573" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581074384368" />
     <state x="553" y="358" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1581049116178" />
-    <state x="2353" y="325" key="CommitChangelistDialog2" timestamp="1581075922067">
+    <state x="1794" y="560" key="CommitChangelistDialog2" timestamp="1581077239319">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2353" y="325" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075922067" />
+    <state x="1794" y="560" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581077239319" />
     <state x="2149" y="349" key="DiffContextDialog" timestamp="1581075921215">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
