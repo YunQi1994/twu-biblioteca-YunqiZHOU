@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -168,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581075320605</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix a naming issue">
+      <created>1581075449420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581075449420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Welcom message" />
     <MESSAGE value="add Books class which has a booklist and getBooks() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Books class which has a booklist and getBooks() method" />
+    <MESSAGE value="fix a naming issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix a naming issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="117" key="#Project_Structure" timestamp="1581049005207">
@@ -199,10 +209,10 @@
     </state>
     <state x="2423" y="573" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581074384368" />
     <state x="553" y="358" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1581049116178" />
-    <state x="2353" y="325" key="CommitChangelistDialog2" timestamp="1581075320511">
+    <state x="2353" y="325" key="CommitChangelistDialog2" timestamp="1581075449291">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2353" y="325" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075320511" />
+    <state x="2353" y="325" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075449291" />
     <state width="2518" height="439" key="GridCell.Tab.0.bottom" timestamp="1581074625419">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
@@ -235,10 +245,10 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2524" y="644" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581074699021" />
-    <state x="2292" y="298" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581074602103">
+    <state x="2292" y="298" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581075585920">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2292" y="298" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581074602103" />
+    <state x="2292" y="298" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075585920" />
     <state x="479" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1581051449286" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

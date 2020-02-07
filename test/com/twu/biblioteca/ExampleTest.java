@@ -10,4 +10,14 @@ public class ExampleTest {
     public void test() {
         assertEquals(1, 1);
     }
+
+    public void shouldReturnAListOfBooksAfterWelcome(){
+        // get book obj
+        Books book = new Books();
+        // get App obj
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
+
+        String[] expectBookList = book.getBooks();
+        assertEquals(expectBookList, bibliotecaApp.getBooksList());
+    }
 }
