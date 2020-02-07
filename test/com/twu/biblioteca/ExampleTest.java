@@ -12,12 +12,11 @@ public class ExampleTest {
     }
 
     public void shouldReturnAListOfBooksAfterWelcome(){
-        // get book obj
-        Books book = new Books();
-        // get App obj
+
+        BookLists bookList = new BookLists();
         BibliotecaApp bibliotecaApp = new BibliotecaApp();
 
-        String[] expectBookList = book.getBooks();
-        assertEquals(expectBookList, bibliotecaApp.getBooksList());
+        String[] expectBookList = bookList.getBookList();
+        assertEquals(expectBookList, bibliotecaApp.getList());
     }
 }
