@@ -13,8 +13,8 @@ public class Test {
         // get App obj
         BibliotecaApp bibliotecaApp = new BibliotecaApp();
 
-        String[] expectBookList = book.getBookList();
-        assertEquals(expectBookList, bibliotecaApp.getBooks());
+        String[] expectBookList = book.getBooks();
+        assertEquals(expectBookList, bibliotecaApp.getBooksList());
     }
 
 }
