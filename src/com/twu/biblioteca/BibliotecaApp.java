@@ -58,10 +58,14 @@ public class BibliotecaApp {
             printOptions();
             int input = scanner.nextInt();
             if (input == 1){
-                String[][] result = getBookListFromMenu(input);
+                String[][] result = getBookListFromMenu(1);
                 printBookList(result);
                 break;
-            }else{
+            }
+            if (input == 0){
+                System.out.println("See you");
+                break;
+            } else{
                 System.out.println("Please choose a valid option!");
             }
         }
