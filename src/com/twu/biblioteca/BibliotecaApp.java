@@ -7,6 +7,7 @@ public class BibliotecaApp {
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
         printBookList();
+
     }
 
     public static String[][] getList() {
@@ -25,10 +26,17 @@ public class BibliotecaApp {
         }
     }
 
-    public static String getOption(int userInput){
+    public static String[] getOptions(){
         Menu menu = new Menu();
-        String[] options = menu.getMenu();
-        return options[userInput-1];
+        return menu.getMenu();
+    }
+
+    public static String[][] getBookListFromMenu(int userInput){
+        String[][] bookList = new String[][]{};
+        if (userInput == 1){
+            bookList = getList();
+        }
+        return bookList;
     }
 
 

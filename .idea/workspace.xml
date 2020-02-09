@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="add Author and Year to books;&#10;better printing">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
+    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581080474627</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass">
+      <created>1581222309819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581222309819</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +237,8 @@
     <MESSAGE value="clean up previous test code;&#10;add new test;&#10;test that a bookList can be correctly got with getList()" />
     <MESSAGE value="print booklist after welcome, but print looks ungly" />
     <MESSAGE value="add Author and Year to books;&#10;better printing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Author and Year to books;&#10;better printing" />
+    <MESSAGE value="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="117" key="#Project_Structure" timestamp="1581049005207">
@@ -249,35 +254,39 @@
     </state>
     <state x="2423" y="573" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581074384368" />
     <state x="553" y="358" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1581049116178" />
-    <state x="1794" y="560" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581084954542">
+    <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581224134493">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="1794" y="560" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581084954542" />
+    <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
+    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581224305176">
+      <screen x="1440" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224305176" />
     <state x="2149" y="349" key="DiffContextDialog" timestamp="1581075921215">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
-    <state width="2518" height="439" key="GridCell.Tab.0.bottom" timestamp="1581222224122">
+    <state width="2518" height="439" key="GridCell.Tab.0.bottom" timestamp="1581224654915">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="439" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581222224122" />
+    <state width="2518" height="439" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224654915" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
-    <state width="2518" height="439" key="GridCell.Tab.0.center" timestamp="1581222224121">
+    <state width="2518" height="439" key="GridCell.Tab.0.center" timestamp="1581224654912">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="439" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581222224121" />
+    <state width="2518" height="439" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224654912" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
-    <state width="2518" height="439" key="GridCell.Tab.0.left" timestamp="1581222224120">
+    <state width="2518" height="439" key="GridCell.Tab.0.left" timestamp="1581224654912">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="439" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581222224120" />
+    <state width="2518" height="439" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224654912" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
-    <state width="2518" height="439" key="GridCell.Tab.0.right" timestamp="1581222224122">
+    <state width="2518" height="439" key="GridCell.Tab.0.right" timestamp="1581224654914">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="439" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581222224122" />
+    <state width="2518" height="439" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224654914" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="519" key="GridCell.Tab.1.bottom" timestamp="1581078007772">
       <screen x="1440" y="0" width="2560" height="1440" />
