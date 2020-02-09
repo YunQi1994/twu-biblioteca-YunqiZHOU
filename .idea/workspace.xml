@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581234344544</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test for new AC: send notice when user enter valid input">
+      <created>1581239078577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581239078577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +253,8 @@
     <MESSAGE value="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass" />
     <MESSAGE value="test and function to get booklist from user input" />
     <MESSAGE value="add menuHandler to catch user input, &#10;user can see a menu after greetings message&#10;user can choose option 1 to see booklist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add menuHandler to catch user input, &#10;user can see a menu after greetings message&#10;user can choose option 1 to see booklist" />
+    <MESSAGE value="test for new AC: send notice when user enter valid input" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for new AC: send notice when user enter valid input" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2009" y="187" key="#Project_Structure" timestamp="1581227694888">
@@ -274,35 +283,35 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581234344387">
+    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581239078480">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581234344387" />
+    <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581239078480" />
     <state x="2149" y="349" key="DiffContextDialog" timestamp="1581075921215">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
-    <state width="2518" height="256" key="GridCell.Tab.0.bottom" timestamp="1581234349611">
+    <state width="2518" height="256" key="GridCell.Tab.0.bottom" timestamp="1581242717405">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581234349611" />
+    <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581242717405" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
-    <state width="2518" height="256" key="GridCell.Tab.0.center" timestamp="1581234349609">
+    <state width="2518" height="256" key="GridCell.Tab.0.center" timestamp="1581242717403">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581234349609" />
+    <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581242717403" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
-    <state width="2518" height="256" key="GridCell.Tab.0.left" timestamp="1581234349608">
+    <state width="2518" height="256" key="GridCell.Tab.0.left" timestamp="1581242717402">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581234349608" />
+    <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581242717402" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
-    <state width="2518" height="256" key="GridCell.Tab.0.right" timestamp="1581234349610">
+    <state width="2518" height="256" key="GridCell.Tab.0.right" timestamp="1581242717404">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581234349610" />
+    <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581242717404" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="519" key="GridCell.Tab.1.bottom" timestamp="1581078007772">
       <screen x="1440" y="0" width="2560" height="1440" />
@@ -351,6 +360,10 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2385" y="345" key="run.anything.popup/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581228480011" />
+    <state x="2834" y="449" width="670" height="676" key="search.everywhere.popup" timestamp="1581239746229">
+      <screen x="1440" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2834" y="449" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581239746229" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/biblioteca$BibliotecaApp.ic" NAME="BibliotecaApp Coverage Results" MODIFIED="1581227202094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

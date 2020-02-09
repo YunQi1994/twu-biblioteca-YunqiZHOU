@@ -9,7 +9,6 @@ public class BibliotecaApp {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
-        printOptions();
         openMenu();
 
 
@@ -51,13 +50,26 @@ public class BibliotecaApp {
         return bookList;
     }
     public static void openMenu() {
+
         Scanner scanner = new Scanner(System.in);
 
-        while (scanner.hasNext()) {
-            String[][] result = getBookListFromMenu(scanner.nextInt());
-            printBookList(result);
 
+        while(true){
+            printOptions();
+            int input = scanner.nextInt();
+            if (input == 1){
+                String[][] result = getBookListFromMenu(input);
+                printBookList(result);
+                break;
+            }else{
+                System.out.println("Please choose a valid option!");
+            }
         }
+
+
+
+
+
     }
 
 
