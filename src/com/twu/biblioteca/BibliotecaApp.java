@@ -1,12 +1,17 @@
 package com.twu.biblioteca;
 
+
+import java.util.Scanner;
+
 public class BibliotecaApp {
 
 
     public static void main(String[] args) {
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
-        printBookList();
+        printOptions();
+        openMenu();
+
 
     }
 
@@ -14,8 +19,8 @@ public class BibliotecaApp {
         BookLists bookList = new BookLists();
         return bookList.getBookList();
     }
-    public static void printBookList(){
-        String[][] str = getList();
+
+    public static void printBookList(String[][] str){
         System.out.println("Books We Have:");
 
         for (String[] oneBook : str) {
@@ -31,12 +36,28 @@ public class BibliotecaApp {
         return menu.getMenu();
     }
 
+    public static void printOptions(){
+        String[] opts = getOptions();
+        for (String opt : opts){
+            System.out.println(opt);
+        }
+    }
+
     public static String[][] getBookListFromMenu(int userInput){
         String[][] bookList = new String[][]{};
         if (userInput == 1){
             bookList = getList();
         }
         return bookList;
+    }
+    public static void openMenu() {
+        Scanner scanner = new Scanner(System.in);
+
+        while (scanner.hasNext()) {
+            String[][] result = getBookListFromMenu(scanner.nextInt());
+            printBookList(result);
+
+        }
     }
 
 
