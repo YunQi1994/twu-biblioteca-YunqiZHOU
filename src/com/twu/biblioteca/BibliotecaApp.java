@@ -76,10 +76,10 @@ public class BibliotecaApp {
                         // check availability
                         if (bookLists.isAvailable(strInput)){
                             bookLists.checkOutABook(strInput);
-                            System.out.println("<<"+strInput+">>"+"\nchecked out successfully\n\n");
+                            System.out.println("<<"+strInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
                         }else
                         {
-                            System.out.println("the book not found\n\n");
+                            System.out.println("Sorry, that book is not available\n\n");
                         }
 
 
