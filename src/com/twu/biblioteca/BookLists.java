@@ -27,8 +27,12 @@ public class BookLists {
     }
 
     public boolean isAvailable(String bookTitle) {
-
-        return true;
+        String[] bookTitles = new String[bookList.length];
+        for (int i = 0; i < bookList.length; i++)
+        {
+            bookTitles[i] = bookList[i][0];
+        }
+        return Arrays.asList(bookTitles).contains(bookTitle);
     }
 
 
