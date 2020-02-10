@@ -26,5 +26,10 @@ public class BookLists {
         bookList = newBookList;
     }
 
+    public boolean isAvailable(String bookTitle) {
+
+        return true;
+    }
+
 
 }

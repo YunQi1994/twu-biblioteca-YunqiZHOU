@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.AppTest.shouldReturnTrueWhenABookIsStillAvailableInLibrary">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -86,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookListsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.shouldReturnTrueWhenABookIsStillAvailableInLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +96,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookListsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.AppTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueWhenABookIsStillAvailableInLibrary" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.shouldReturnTrueWhenABookIsStillAvailableInLibrary" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JAR Application.biblioteca.jar" />
         <item itemvalue="JUnit.ExampleTest" />
-        <item itemvalue="JUnit.BookListsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581306621905</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add quit variable to control wihle loop">
+      <created>1581306795506</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581306795506</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +315,8 @@
     <MESSAGE value="test for checkout A book" />
     <MESSAGE value="test for checkout A book passed" />
     <MESSAGE value="use switch instead of if\else" />
-    <option name="LAST_COMMIT_MESSAGE" value="use switch instead of if\else" />
+    <MESSAGE value="add quit variable to control wihle loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="add quit variable to control wihle loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2009" y="187" key="#Project_Structure" timestamp="1581227694888">
@@ -335,43 +345,43 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="2231" y="255" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581306621702">
+    <state x="2231" y="255" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581306795365">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2231" y="255" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306621702" />
+    <state x="2231" y="255" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306795365" />
     <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252622563" />
     <state x="2231" y="269" key="CommitChangelistDialog2/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581304813518" />
     <state x="2149" y="349" key="DiffContextDialog" timestamp="1581075921215">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1581306742828">
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1581308028302">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306742828" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581308028302" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616252" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704087" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1581306742826">
+    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1581308028301">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306742826" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581308028301" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616250" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1581306742826">
+    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1581308028300">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306742826" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581308028300" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616249" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1581306742827">
+    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1581308028302">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581306742827" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581308028302" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616251" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
