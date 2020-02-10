@@ -50,11 +50,11 @@ public class BibliotecaApp {
         return bookList;
     }
     public static void openMenu() {
-
+        boolean quit = false;
         Scanner scanner = new Scanner(System.in);
 
 
-        while(true){
+        while(!quit){
             printOptions();
             int input = scanner.nextInt();
 
@@ -62,6 +62,8 @@ public class BibliotecaApp {
 
                 case 0://quit system
                     System.out.println("See you");
+                    quit = true;
+                    break;
                 case 1://see booklist
                     String[][] result = getBookListFromMenu(1);
                     printBookList(result);
