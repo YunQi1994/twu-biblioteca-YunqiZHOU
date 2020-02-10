@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class BibliotecaApp {
 
-
+    private static BookLists bookLists = new BookLists();
     public static void main(String[] args) {
 
 
@@ -16,8 +16,7 @@ public class BibliotecaApp {
     }
 
     public static String[][] getList() {
-        BookLists bookList = new BookLists();
-        return bookList.getBookList();
+        return bookLists.getBookList();
     }
 
     public static void printBookList(String[][] str){
@@ -58,17 +57,27 @@ public class BibliotecaApp {
         while(true){
             printOptions();
             int input = scanner.nextInt();
-            if (input == 1){
-                String[][] result = getBookListFromMenu(1);
-                printBookList(result);
-                break;
+
+            switch (input){
+
+                case 0://quit system
+                    System.out.println("See you");
+                case 1://see booklist
+                    String[][] result = getBookListFromMenu(1);
+                    printBookList(result);
+                    break;
+
+                case 2://checkout a book
+                    System.out.println("Please enter the title of a book to checkout:");
+                    String checkoutInput = scanner.next();
+
+                    bookLists.checkOutABook(checkoutInput);
+                    break;
+                default:
+                    System.out.println("Please choose a valid option!");
+                    break;
             }
-            if (input == 0){
-                System.out.println("See you");
-                break;
-            } else{
-                System.out.println("Please choose a valid option!");
-            }
+
         }
 
 
