@@ -62,7 +62,7 @@ public class BibliotecaApp {
                 switch (opt){
 
                     case '0'://quit system
-                        System.out.println("See you");
+                        System.out.println("See You");
                         quit = true;
                         break;
                     case '1'://see booklist
@@ -73,16 +73,24 @@ public class BibliotecaApp {
                     case '2'://checkout a book
                         System.out.println("Please enter the title of a book to checkout:");
                         String strInput = scanner.next();
+                        // check availability
+                        if (bookLists.isAvailable(strInput)){
+                            bookLists.checkOutABook(strInput);
+                            System.out.println("<<"+strInput+">>"+"\nchecked out successfully\n\n");
+                        }else
+                        {
+                            System.out.println("the book not found\n\n");
+                        }
 
-                        bookLists.checkOutABook(strInput);
+
                         break;
                     default:
-                        System.out.println("Please choose a valid option!");
+                        System.out.println("Please choose a valid option!\n\n");
                         break;
                 }
             }
             else{
-                System.out.println("Please choose a valid option!");
+                System.out.println("Please choose a valid option!\n\n");
             }
 
 
