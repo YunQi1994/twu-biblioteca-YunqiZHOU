@@ -56,29 +56,35 @@ public class BibliotecaApp {
 
         while(!quit){
             printOptions();
-            int input = scanner.nextInt();
+            String input = scanner.next();
+            if (input.length()==1){
+                char opt = input.charAt(0);
+                switch (opt){
 
-            switch (input){
+                    case '0'://quit system
+                        System.out.println("See you");
+                        quit = true;
+                        break;
+                    case '1'://see booklist
+                        String[][] result = getBookListFromMenu(1);
+                        printBookList(result);
+                        break;
 
-                case 0://quit system
-                    System.out.println("See you");
-                    quit = true;
-                    break;
-                case 1://see booklist
-                    String[][] result = getBookListFromMenu(1);
-                    printBookList(result);
-                    break;
+                    case '2'://checkout a book
+                        System.out.println("Please enter the title of a book to checkout:");
+                        String strInput = scanner.next();
 
-                case 2://checkout a book
-                    System.out.println("Please enter the title of a book to checkout:");
-                    String checkoutInput = scanner.next();
-
-                    bookLists.checkOutABook(checkoutInput);
-                    break;
-                default:
-                    System.out.println("Please choose a valid option!");
-                    break;
+                        bookLists.checkOutABook(strInput);
+                        break;
+                    default:
+                        System.out.println("Please choose a valid option!");
+                        break;
+                }
             }
+            else{
+                System.out.println("Please choose a valid option!");
+            }
+
 
         }
 
