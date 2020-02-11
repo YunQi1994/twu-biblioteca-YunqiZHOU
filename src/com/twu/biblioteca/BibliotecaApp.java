@@ -6,29 +6,35 @@ import java.util.Scanner;
 public class BibliotecaApp {
 
     private static BookLists bookLists = new BookLists();
+    private static Movies movies = new Movies();
     public static void main(String[] args) {
 
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
         openMenu();
-
-
     }
 
-    public static String[][] getList() {
-        return bookLists.getBookList();
-    }
 
     public static void printBookList(String[][] str){
-        System.out.println("Books We Have:");
 
         for (String[] oneBook : str) {
-            System.out.println(oneBook[0]);
+            System.out.println("---"+oneBook[0]+"---");
             for (int j = 1; j < oneBook.length; j++) {
                 System.out.println("(" + oneBook[j] + ")");
             }
         }
     }
+
+    public static void printMovieList(String[][] str){
+
+        for (String[] oneMovie : str) {
+            System.out.println("---"+oneMovie[0]+"---");
+            for (int j = 1; j < oneMovie.length; j++) {
+                System.out.println("(" + oneMovie[j] + ")");
+            }
+        }
+    }
+
 
     public static String[] getOptions(){
         Menu menu = new Menu();
@@ -37,6 +43,7 @@ public class BibliotecaApp {
 
     public static void printOptions(){
         String[] opts = getOptions();
+        System.out.println(">>> Please enter an option: <<<");
         for (String opt : opts){
             System.out.println(opt);
         }
@@ -45,10 +52,19 @@ public class BibliotecaApp {
     public static String[][] getBookListFromMenu(int userInput){
         String[][] bookList = new String[][]{};
         if (userInput == 1){
-            bookList = getList();
+            bookList = bookLists.getBookList();
         }
         return bookList;
     }
+
+    public static String[][] getMoviesFromMenu(int userInput){
+        String[][] moviesList = new String[][]{};
+        if (userInput == 4){
+            moviesList = movies.getMovies();
+        }
+        return moviesList;
+    }
+
     public static void openMenu() {
         boolean quit = false;
         Scanner scanner = new Scanner(System.in);
@@ -66,6 +82,7 @@ public class BibliotecaApp {
                         quit = true;
                         break;
                     case '1'://see booklist
+                        System.out.println("Books We Have:\n\n");
                         String[][] result = getBookListFromMenu(1);
                         printBookList(result);
                         break;
@@ -95,6 +112,13 @@ public class BibliotecaApp {
                             System.out.println("This is not a valid book to return\n\n");
                         }
                         break;
+
+                    case '4': //see movielist
+                        System.out.println("Movies we have:\n\n");
+                        String[][] moviesList = getMoviesFromMenu(4);
+                        printMovieList(moviesList);
+                        break;
+
                     default:
                         System.out.println("Please choose a valid option!\n\n");
                         break;

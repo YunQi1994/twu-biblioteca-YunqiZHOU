@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -89,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.shouldReturnFalseWhenABookIsNotAvailableInLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.shouldReturnAMovieListWhenUserEnter4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -99,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.AppTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseWhenABookIsNotAvailableInLibrary" />
+      <option name="METHOD_NAME" value="shouldReturnAMovieListWhenUserEnter4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.AppTest.shouldReturnAMovieListWhenUserEnter4" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.shouldReturnFalseWhenTheBookIsNotBelongToTheLibrary" />
         <item itemvalue="JUnit.AppTest.shouldTheBookBecomeAvailableAfterUserHasReturnedIt" />
-        <item itemvalue="JUnit.AppTest.shouldReturnFalseWhenABookIsNotAvailableInLibrary" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581392299102</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="notice user when a book does not belong to the library">
+      <created>1581393645819</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1581393645819</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,7 +394,8 @@
     <MESSAGE value="edit wording" />
     <MESSAGE value="refactor code, change the logic how system checkout a book, and how system check availability." />
     <MESSAGE value="test for returning a book;&#10;build returnABook() &#10;test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="test for returning a book;&#10;build returnABook() &#10;test passed" />
+    <MESSAGE value="notice user when a book does not belong to the library" />
+    <option name="LAST_COMMIT_MESSAGE" value="notice user when a book does not belong to the library" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2009" y="187" key="#Project_Structure" timestamp="1581227694888">
@@ -416,43 +424,43 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="2231" y="254" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581393589151">
+    <state x="2231" y="254" width="734" height="825" key="CommitChangelistDialog2" timestamp="1581393645685">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2231" y="254" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393589151" />
+    <state x="2231" y="254" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393645685" />
     <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252622563" />
     <state x="2231" y="269" key="CommitChangelistDialog2/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581304813518" />
     <state x="2149" y="349" key="DiffContextDialog" timestamp="1581075921215">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1581393594756">
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1581419650834">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393594756" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581419650834" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616252" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704087" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1581393594754">
+    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1581419650833">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393594754" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581419650833" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616250" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1581393594753">
+    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1581419650832">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393594753" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581419650832" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616249" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1581393594755">
+    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1581419650834">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581393594755" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581419650834" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616251" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
@@ -477,10 +485,10 @@
     </state>
     <state x="1806" y="126" key="SettingsEditor/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581228967528" />
     <state x="243" y="100" key="SettingsEditor/43.23.1397.877@43.23.1397.877" timestamp="1581046838623" />
-    <state x="1865" y="399" key="com.intellij.ide.util.TipDialog" timestamp="1581388828161">
+    <state x="1865" y="399" key="com.intellij.ide.util.TipDialog" timestamp="1581416119449">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1865" y="399" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581388828161" />
+    <state x="1865" y="399" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581416119449" />
     <state x="2087" y="464" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581253830356" />
     <state x="1865" y="414" key="com.intellij.ide.util.TipDialog/41.23.1399.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1581301111659" />
     <state x="396" y="296" key="com.intellij.ide.util.TipDialog/43.23.1397.877@43.23.1397.877" timestamp="1581046817214" />
