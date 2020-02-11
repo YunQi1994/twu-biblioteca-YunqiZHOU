@@ -72,17 +72,28 @@ public class BibliotecaApp {
 
                     case '2'://checkout a book
                         System.out.println("Please enter the title of a book to checkout:");
-                        String strInput = scanner.next();
+                        String checkInput = scanner.next();
                         // check availability
-                        if (bookLists.isAvailable(strInput)){
-                            bookLists.checkOutABook(strInput);
-                            System.out.println("<<"+strInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
+                        if (bookLists.isAvailable(checkInput)){
+                            bookLists.checkOutABook(checkInput);
+                            System.out.println("<<"+checkInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
                         }else
                         {
                             System.out.println("Sorry, that book is not available\n\n");
                         }
+                        break;
 
-
+                    case '3': //return A book
+                        System.out.println("Please enter the title of a book to return:");
+                        String returnInput = scanner.next();
+                        bookLists.returnABook(returnInput);
+                        // check book first
+                        if (bookLists.doesTheBookBelongToTheLibrary(returnInput)){
+                            System.out.println("Thank you for returning the book");
+                        }
+                        else {
+                            System.out.println("This is not a valid book to return\n\n");
+                        }
                         break;
                     default:
                         System.out.println("Please choose a valid option!\n\n");

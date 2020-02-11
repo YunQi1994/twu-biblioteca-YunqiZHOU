@@ -44,5 +44,18 @@ public class BookLists {
         }
     }
 
+    public boolean doesTheBookBelongToTheLibrary(String bookTitle) {
+        boolean isBookBelongToTheLibrary  = false;
+        String[] bookTitles = new String[bookList.length];
+        for (String[] str : bookList) {
+            if (bookTitle.equals(str[0])) {
+                isBookBelongToTheLibrary = true;
+                break;
+            }
+
+        }
+        return isBookBelongToTheLibrary;
+    }
+
 
 }
