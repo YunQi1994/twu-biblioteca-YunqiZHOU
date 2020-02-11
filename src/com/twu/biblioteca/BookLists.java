@@ -4,35 +4,35 @@ import java.util.Arrays;
 
 public class BookLists {
     private String[][] bookList = {
-            {"book1", "Author: Hugh", "YearOfPub: 2001"},
-            {"book2", "Author: Jack", "YearOfPub: 2002"},
-            {"book3", "Author: Man", "YearOfPub: 2003"}};
+            {"book1", "Author: Hugh", "YearOfPub: 2001","available"},
+            {"book2", "Author: Jack", "YearOfPub: 2002","available"},
+            {"book3", "Author: Man", "YearOfPub: 2003","available"}};
 
     public String[][] getBookList() {
         return bookList;
     }
 
     public void checkOutABook(String bookTitle) {
-        int len = bookList.length;
-        String[][] newBookList = new String[len-1][3];
-        int i = 0;
-        for (String[] str : bookList){
-            if (!bookTitle.equals(str[0])){
-                //System.out.println("111111");
-                newBookList[i] = str;
-                i ++;
+
+        for (int i = 0; i<bookList.length; i++){
+            if (bookTitle.equals(bookList[i][0])){
+                // check as borrowed
+                bookList[i][3] = "borrowed";
             }
         }
-        bookList = newBookList;
     }
 
     public boolean isAvailable(String bookTitle) {
+        boolean availability  = false;
         String[] bookTitles = new String[bookList.length];
-        for (int i = 0; i < bookList.length; i++)
-        {
-            bookTitles[i] = bookList[i][0];
+        for (String[] str : bookList) {
+            if (bookTitle.equals(str[0]) && "available".equals(str[3])) {
+                availability = true;
+                break;
+            }
+
         }
-        return Arrays.asList(bookTitles).contains(bookTitle);
+        return availability;
     }
 
 
