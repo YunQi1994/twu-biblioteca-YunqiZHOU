@@ -35,5 +35,14 @@ public class BookLists {
         return availability;
     }
 
+    public void returnABook(String bookTitle) {
+        for (int i = 0; i<bookList.length; i++){
+            if (bookTitle.equals(bookList[i][0])){
+                // check as available
+                bookList[i][3] = "available";
+            }
+        }
+    }
+
 
 }
