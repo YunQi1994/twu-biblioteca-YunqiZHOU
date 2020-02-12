@@ -14,8 +14,17 @@ public class BibliotecaApp {
         openMenu();
     }
 
+    public static void printList(String[][] str){
+        for (String[] one : str) {
+            System.out.println("---"+one[0]+"---");
+            for (int j = 1; j < one.length; j++) {
+                System.out.println("(" + one[j] + ")");
+            }
+        }
+    }
 
-    public static void printBookList(String[][] str){
+    // legacy code for print books and movies
+/*    public static void printBookList(String[][] str){
 
         for (String[] oneBook : str) {
             System.out.println("---"+oneBook[0]+"---");
@@ -33,7 +42,7 @@ public class BibliotecaApp {
                 System.out.println("(" + oneMovie[j] + ")");
             }
         }
-    }
+    }*/
 
 
     public static String[] getOptions(){
@@ -49,7 +58,20 @@ public class BibliotecaApp {
         }
     }
 
-    public static String[][] getBookListFromMenu(int userInput){
+    public static String[][] getListOfResource(int userInput){
+        String[][] list = new String[][]{};
+        if (userInput == 1){
+            list = bookLists.getBookList();
+        }
+        if (userInput == 4){
+            list = movies.getMovies();
+        }
+        return list;
+    }
+
+
+    // legacy get books and movies methods
+/*    public static String[][] getBookListFromMenu(int userInput){
         String[][] bookList = new String[][]{};
         if (userInput == 1){
             bookList = bookLists.getBookList();
@@ -63,7 +85,7 @@ public class BibliotecaApp {
             moviesList = movies.getMovies();
         }
         return moviesList;
-    }
+    }*/
 
     public static void openMenu() {
         boolean quit = false;
@@ -82,9 +104,9 @@ public class BibliotecaApp {
                         quit = true;
                         break;
                     case '1'://see booklist
-                        System.out.println("Books We Have:\n\n");
-                        String[][] result = getBookListFromMenu(1);
-                        printBookList(result);
+                        System.out.println("Books We Have:\n");
+                        String[][] result = getListOfResource(1);
+                        printList(result);
                         break;
 
                     case '2'://checkout a book
@@ -114,9 +136,9 @@ public class BibliotecaApp {
                         break;
 
                     case '4': //see movielist
-                        System.out.println("Movies we have:\n\n");
-                        String[][] moviesList = getMoviesFromMenu(4);
-                        printMovieList(moviesList);
+                        System.out.println("Movies we have:\n");
+                        String[][] moviesList = getListOfResource(4);
+                        printList(moviesList);
                         break;
 
                     default:
