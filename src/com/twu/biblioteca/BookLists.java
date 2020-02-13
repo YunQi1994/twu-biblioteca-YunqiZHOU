@@ -3,7 +3,7 @@ package com.twu.biblioteca;
 import java.util.Arrays;
 
 public class BookLists {
-    private String[][] bookList = {
+    private static String[][] bookList = {
             {"book1", "Author: Hugh", "YearOfPub: 2001","available"},
             {"book2", "Author: Jack", "YearOfPub: 2002","available"},
             {"book3", "Author: Man", "YearOfPub: 2003","available"}};
