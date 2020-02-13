@@ -11,7 +11,28 @@ public class BibliotecaApp {
 
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
+        while (true){
+            System.out.println("Please Login");
+            User user = new User();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("User Name: (your uniqe user ID)");
+            String input = scanner.next();
+
+            if (user.isUserExist(input)){
+                System.out.println("Password: ");
+                String password = scanner.next();
+                if (user.isUserNameAndPasswordCorrect(input,password)){
+                    user.userLogin(input,password);
+                    System.out.println("Hello! " + input);
+                    break;
+                }
+                else{
+                    System.out.println("Sorry, the password is not correct\n");
+                }
+            }
+        }
         openMenu();
+
     }
 
     public static void printList(String[][] str){
