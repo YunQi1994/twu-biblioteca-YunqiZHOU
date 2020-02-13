@@ -7,7 +7,8 @@ public class Menu {
             "2. Checkout A Book",
             "3. Return A Book",
             "4. List if Movies",
-            "5. Checkout A Moive"
+            "5. Checkout A Moive",
+            "6. My Account"
     };
 
     public String[] getMenu(){

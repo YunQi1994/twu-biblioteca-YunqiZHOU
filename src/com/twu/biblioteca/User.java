@@ -3,10 +3,11 @@ package com.twu.biblioteca;
 public class User {
 
     private static String [][] users = {
-            {"client1", "zxc123", "offLine",""},
-            {"client2", "asd456", "offLine",""},
-            {"client3", "qwe789", "offLine",""},
+            {"client1", "zxc123", "offLine", "", "Name: Bridget", "Phone: 111-1111-1111", "Email: bridget111@gmail.com"},
+            {"client2", "asd456", "offLine", "", "Name: Bridie", "Phone: 222-2222-2222", "Email: bridget111@gmail.com"},
+            {"client3", "qwe789", "offLine", "", "Name: Biddy", "Phone: 333-3333-3333", "Email: bridget111@gmail.com"}
     };
+
 
     public boolean isUserExist (String userName) {
         boolean isExist = false;
@@ -75,5 +76,12 @@ public class User {
     }
 
 
-
+    public void recordBookCheckout(String bookName, String userName) {
+        bookName = "<" + bookName + ">";
+        for (int i = 0; i < users.length; i++){
+            if (users[i][0].equals(userName)){
+                users[i][3] += bookName;
+            }
+        }
+    }
 }

@@ -7,23 +7,29 @@ public class BibliotecaApp {
 
     private static BookLists bookLists = new BookLists();
     private static Movies movies = new Movies();
+    private static User user = new User();
+    private static String userName;
     public static void main(String[] args) {
 
 
         System.out.println("Welcome to Biblioteca. Your one-step-shop for great book titles in Bangalore!");
+        login ();
+        openMenu();
+
+    }
+    private static void login (){
         while (true){
             System.out.println("Please Login");
-            User user = new User();
             Scanner scanner = new Scanner(System.in);
             System.out.println("User Name: (your uniqe user ID)");
-            String input = scanner.next();
+            userName = scanner.next();
 
-            if (user.isUserExist(input)){
+            if (user.isUserExist(userName)){
                 System.out.println("Password: ");
                 String password = scanner.next();
-                if (user.isUserNameAndPasswordCorrect(input,password)){
-                    user.userLogin(input,password);
-                    System.out.println("Hello! " + input);
+                if (user.isUserNameAndPasswordCorrect(userName,password)){
+                    user.userLogin(userName,password);
+                    System.out.println("Hello! " + userName);
                     break;
                 }
                 else{
@@ -31,8 +37,6 @@ public class BibliotecaApp {
                 }
             }
         }
-        openMenu();
-
     }
 
     public static void printList(String[][] str){
@@ -135,6 +139,7 @@ public class BibliotecaApp {
                         String checkouBookInput = scanner.next();
                         // check availability
                         if (bookLists.isAvailable(checkouBookInput)){
+                            user.recordBookCheckout(checkouBookInput,userName);
                             bookLists.checkOutABook(checkouBookInput);
                             System.out.println("<<"+checkouBookInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
                         }else
@@ -170,6 +175,16 @@ public class BibliotecaApp {
                         }
                         else{
                             System.out.println("Sorry, that movie is not available\n\n");
+                        }
+                        break;
+
+                    case '6':
+                        String[] userInfo = user.getUser(userName);
+                        System.out.println("UserID: " + userName);
+                        System.out.println("Status: " + userInfo[2]);
+                        System.out.println(("Books checked out: "+userInfo[3]));
+                        for (int i = 4; i < userInfo.length; i++){
+                            System.out.println(userInfo[i]);
                         }
                         break;
 
