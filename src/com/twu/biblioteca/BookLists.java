@@ -24,6 +24,7 @@ public class BookLists {
     }
 
     public boolean isAvailable(String bookTitle) {
+        // not available 或者无效输入都将为false
         boolean availability  = false;
         String[] bookTitles = new String[bookList.length];
         for (String[] str : bookList) {

@@ -19,4 +19,20 @@ public class Movies {
             }
         }
     }
+
+    public boolean isAvailable(String bookTitle) {
+        // not available 或者无效输入都将为false
+        boolean availability  = false;
+        String[] bookTitles = new String[movieList.length];
+        for (String[] str : movieList) {
+            if (bookTitle.equals(str[0]) && "available".equals(str[4])) {
+                availability = true;
+                break;
+            }
+
+        }
+        return availability;
+    }
+
+
 }

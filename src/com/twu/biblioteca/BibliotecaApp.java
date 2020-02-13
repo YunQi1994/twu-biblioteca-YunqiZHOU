@@ -111,11 +111,11 @@ public class BibliotecaApp {
 
                     case '2'://checkout a book
                         System.out.println("Please enter the title of a book to checkout:");
-                        String checkInput = scanner.next();
+                        String checkouBookInput = scanner.next();
                         // check availability
-                        if (bookLists.isAvailable(checkInput)){
-                            bookLists.checkOutABook(checkInput);
-                            System.out.println("<<"+checkInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
+                        if (bookLists.isAvailable(checkouBookInput)){
+                            bookLists.checkOutABook(checkouBookInput);
+                            System.out.println("<<"+checkouBookInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
                         }else
                         {
                             System.out.println("Sorry, that book is not available\n\n");
@@ -139,6 +139,17 @@ public class BibliotecaApp {
                         System.out.println("Movies we have:\n");
                         String[][] moviesList = getListOfResource(4);
                         printList(moviesList);
+                        break;
+                    case '5': //checkout A moive
+                        System.out.println("Please enter the name of movie to checkout:");
+                        String checkoutMoiveInput = scanner.next();
+                        if (movies.isAvailable(checkoutMoiveInput)){
+                            movies.checkoutAMovie(checkoutMoiveInput);
+                            System.out.println("<<"+checkoutMoiveInput+">>"+"\nchecked out successfully\nThank you, enjoy the movie\n\n");
+                        }
+                        else{
+                            System.out.println("Sorry, that movie is not available\n\n");
+                        }
                         break;
 
                     default:
