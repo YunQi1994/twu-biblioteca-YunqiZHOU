@@ -10,4 +10,13 @@ public class Movies {
     public String[][] getMovies() {
         return movieList;
     }
+
+    public void checkoutAMovie(String movieName) {
+        for (int i = 0; i<movieList.length; i++){
+            if (movieName.equals(movieList[i][0])){
+                // check as borrowed
+                movieList[i][4] = "borrowed";
+            }
+        }
+    }
 }
