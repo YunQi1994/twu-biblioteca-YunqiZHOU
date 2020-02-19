@@ -31,13 +31,25 @@ public class UserVerificationTest {
 
     @Test
     public void shouldReturnTureWhenPasswordDoesMatch(){
+        String userName = "client1";
         String password = "zxc123";
-        assertTrue(userVerification.isPasswordCorrect(password));
+        assertTrue(userVerification.isPasswordCorrect(password,userName));
     }
 
     @Test
     public void shouldReturnFalseWhenPasswordDoesNotMatch(){
+        String userName = "client1";
         String password = "zxc1231";
-        assertFalse(userVerification.isPasswordCorrect(password));
+        assertFalse(userVerification.isPasswordCorrect(password,userName));
+    }
+
+    @Test
+    public void shouldLogUserOn(){
+        String userName = "client2";
+        String expect = "onLine";
+        testUser.userLogin(userName);
+        String actual = testUser.getUser(userName)[2];
+
+        assertEquals(expect,actual);
     }
 }

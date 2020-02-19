@@ -8,6 +8,7 @@ public class BibliotecaApp {
     private static BookLists bookLists = new BookLists();
     private static Movies movies = new Movies();
     private static User user = new User();
+    private static UserVerification userVerification = new UserVerification(user);
     private static String userName;
     public static void main(String[] args) {
 
@@ -24,17 +25,20 @@ public class BibliotecaApp {
             System.out.println("User Name: (your uniqe user ID)");
             userName = scanner.next();
 
-            if (user.isUserExist(userName)){
+            if (userVerification.isUserExist(userName)){
                 System.out.println("Password: ");
                 String password = scanner.next();
-                if (user.isUserNameAndPasswordCorrect(userName,password)){
-                    user.userLogin(userName,password);
+                if (userVerification.isPasswordCorrect(password,userName)){
+                    user.userLogin(userName);
                     System.out.println("Hello! " + userName);
                     break;
                 }
                 else{
                     System.out.println("Sorry, the password is not correct\n");
                 }
+            }
+            else {
+                System.out.println("user not found, please try again");
             }
         }
     }

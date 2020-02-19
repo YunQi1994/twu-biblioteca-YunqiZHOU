@@ -23,20 +23,15 @@ public class UserVerification {
         return isExist;
     }
 
-    public boolean isPasswordCorrect(String password){
+    public boolean isPasswordCorrect(String password, String userName){
         boolean iscorrect = false;
-        for (String [] user : users){
-            if (password.equals(user[1])){
-                // password is correct
-                iscorrect = true;
-                System.out.println("pass");
-                break;
-            }
-            else{
-                System.out.println("Sorry, the password is not correct\n");
-                break;
-            }
+        String [] userInfo = user.getUser(userName);
+        if (password.equals(userInfo[1])){
+            // password is correct
+            iscorrect = true;
+            //System.out.println("pass");
         }
         return iscorrect;
     }
+
 }

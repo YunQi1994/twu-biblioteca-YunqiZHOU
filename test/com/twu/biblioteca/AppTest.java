@@ -129,7 +129,7 @@ public class AppTest {
         assertFalse(actual);
     }
 
-    @Test
+/*    @Test
     public void shouldLoginWhenUserEnterCorrectUserNameAndPassword (){
         String userName = "client2";
         String password = "asd456";
@@ -139,7 +139,7 @@ public class AppTest {
         // get user login status
         String actual = user.getUser("client2")[2];
         assertEquals("onLine", actual);
-    }
+    }*/
 
     @Test
     public void shouldRecordCheckOuttatusAfterUserCheckouABook(){

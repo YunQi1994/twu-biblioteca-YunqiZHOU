@@ -71,11 +71,8 @@ public class User {
         return isVerified;
     }
 
-    public void userLogin (String userName, String password){
-
-        if (isUserNameAndPasswordCorrect(userName,password)){
-            getUser(userName)[2] = "onLine";
-        }
+    public void userLogin (String userName){
+        getUser(userName)[2] = "onLine";
     }
 
 
