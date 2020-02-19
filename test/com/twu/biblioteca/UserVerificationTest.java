@@ -28,4 +28,16 @@ public class UserVerificationTest {
         String userName = "client10";
         assertFalse(userVerification.isUserExist(userName));
     }
+
+    @Test
+    public void shouldReturnTureWhenPasswordDoesMatch(){
+        String password = "zxc123";
+        assertTrue(userVerification.isPasswordCorrect(password));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenPasswordDoesNotMatch(){
+        String password = "zxc1231";
+        assertFalse(userVerification.isPasswordCorrect(password));
+    }
 }

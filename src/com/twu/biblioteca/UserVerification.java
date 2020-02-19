@@ -2,15 +2,16 @@ package com.twu.biblioteca;
 
 public class UserVerification {
     private User user;
-
+    private String [][] users;
     public UserVerification (User user){
         this.user = user;
+        users = user.getUserLists();
     }
 
 
 
     public boolean isUserExist (String userName) {
-        String [][] users = user.getUserLists();
+
         boolean isExist = false;
         for (String [] user : users){
             if (userName.equals(user[0])){
@@ -20,5 +21,22 @@ public class UserVerification {
             }
         }
         return isExist;
+    }
+
+    public boolean isPasswordCorrect(String password){
+        boolean iscorrect = false;
+        for (String [] user : users){
+            if (password.equals(user[1])){
+                // password is correct
+                iscorrect = true;
+                System.out.println("pass");
+                break;
+            }
+            else{
+                System.out.println("Sorry, the password is not correct\n");
+                break;
+            }
+        }
+        return iscorrect;
     }
 }
