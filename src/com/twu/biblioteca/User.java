@@ -8,6 +8,9 @@ public class User {
             {"client3", "qwe789", "offLine", "", "Name: Biddy", "Phone: 333-3333-3333", "Email: bridget111@gmail.com"}
     };
 
+    public String[][] getUserLists (){
+        return users;
+    }
 
     public boolean isUserExist (String userName) {
         boolean isExist = false;
