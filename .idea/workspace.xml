@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserVerificationTest.shouldReturnTrueWhenUserIsExist">
+  <component name="RunManager" selected="JUnit.UserVerificationTest.shouldReturnFalseWhenUserDoseNotExist">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -93,22 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.shouldLoginWhenUserEnterCorrectUserNameAndPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.AppTest" />
-      <option name="METHOD_NAME" value="shouldLoginWhenUserEnterCorrectUserNameAndPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppTest.shouldRecordCheckOuttatusAfterUserCheckouABook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -120,6 +103,22 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.AppTest" />
       <option name="METHOD_NAME" value="shouldRecordCheckOuttatusAfterUserCheckouABook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserVerificationTest.shouldReturnFalseWhenUserDoseNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserVerificationTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseWhenUserDoseNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserVerificationTest.shouldReturnFalseWhenUserDoseNotExist" />
         <item itemvalue="JUnit.UserVerificationTest.shouldReturnTrueWhenUserIsExist" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.AppTest.shouldRecordCheckOuttatusAfterUserCheckouABook" />
-        <item itemvalue="JUnit.AppTest.shouldLoginWhenUserEnterCorrectUserNameAndPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582079311524</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add new class UserVerification to verify user identification.&#10;Add test class and the first test for method: isUserExist();">
+      <created>1582081289592</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1582081289592</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Author and Year to books;&#10;better printing" />
     <MESSAGE value="Add test for menu function&#10;add class Menu&#10;add getOption() and modify BibliotecaApp lass" />
     <MESSAGE value="test and function to get booklist from user input" />
     <MESSAGE value="add menuHandler to catch user input, &#10;user can see a menu after greetings message&#10;user can choose option 1 to see booklist" />
@@ -463,7 +468,8 @@
     <MESSAGE value="isUserExist()&#10;isVerified()&#10;userlogin()" />
     <MESSAGE value="complete user login function in main()" />
     <MESSAGE value="add checkout record to user info&#10;option 6: print user profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add checkout record to user info&#10;option 6: print user profile" />
+    <MESSAGE value="add new class UserVerification to verify user identification.&#10;Add test class and the first test for method: isUserExist();" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new class UserVerification to verify user identification.&#10;Add test class and the first test for method: isUserExist();" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1966" y="277" key="#AppTest" timestamp="1581675559566">
@@ -500,12 +506,12 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="2131" y="205" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582079311348">
+    <state x="2131" y="205" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582081289456">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="2231" y="254" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567685841" />
     <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252622563" />
-    <state x="2131" y="205" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582079311348" />
+    <state x="2131" y="205" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582081289456" />
     <state x="2231" y="269" key="CommitChangelistDialog2/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581304813518" />
     <state x="2131" y="225" key="CommitChangelistDialog2/40.23.1400.877/1440.87.1920.1057@1440.87.1920.1057" timestamp="1581736072640" />
     <state x="1972" y="326" width="1152" height="720" key="DiffContextDialog" timestamp="1581588321168">
@@ -513,41 +519,41 @@
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
     <state x="1972" y="326" width="1152" height="720" key="DiffContextDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581588321168" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1581597042255">
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1582081548055">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656540" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616252" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581597042255" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582081548055" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836953" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704087" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1581597042253">
+    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1582081548053">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616250" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581597042253" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582081548053" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836951" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1581597042251">
+    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1582081548052">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656538" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616249" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581597042251" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582081548052" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836951" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1581597042254">
+    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1582081548054">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616251" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581597042254" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582081548054" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836952" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />

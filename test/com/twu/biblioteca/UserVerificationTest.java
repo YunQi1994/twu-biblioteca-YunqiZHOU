@@ -18,8 +18,14 @@ public class UserVerificationTest {
     }
 
     @Test
-    public void shouldReturnTrueWhenUserIsExist (){
+    public void shouldReturnTrueWhenUserDoesExist (){
         String userName = "client1";
         assertTrue(userVerification.isUserExist(userName));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenUserDoseNotExist (){
+        String userName = "client10";
+        assertFalse(userVerification.isUserExist(userName));
     }
 }
