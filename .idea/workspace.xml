@@ -6,13 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
+    <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="modify the isPasswordCorrect();&#10;modify the login() in main class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/UserVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/UserVerification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,7 +443,28 @@
       <option name="project" value="LOCAL" />
       <updated>1582081985686</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="modify the isPasswordCorrect();&#10;modify the main class">
+      <created>1582083449456</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1582083449456</updated>
+    </task>
+    <task id="LOCAL-00042" summary="modify the isPasswordCorrect();&#10;modify the logi() in main class">
+      <created>1582083467094</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1582083467094</updated>
+    </task>
+    <task id="LOCAL-00043" summary="modify the isPasswordCorrect();&#10;modify the login() in main class">
+      <created>1582083476320</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1582083476320</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,9 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add menuHandler to catch user input, &#10;user can see a menu after greetings message&#10;user can choose option 1 to see booklist" />
-    <MESSAGE value="test for new AC: send notice when user enter valid input" />
-    <MESSAGE value="test for new AC: send notice when user enter valid input&#10;&#10;and requrie new input, unitl the input is valid" />
     <MESSAGE value="test for checkout A book" />
     <MESSAGE value="test for checkout A book passed" />
     <MESSAGE value="use switch instead of if\else" />
@@ -489,7 +503,10 @@
     <MESSAGE value="add new class UserVerification to verify user identification.&#10;Add test class and the first test for method: isUserExist();" />
     <MESSAGE value="add new class UserVerification to verify user identification.&#10;Add test class and the first test for method: isUserExist();&#10;modify wording of test methods" />
     <MESSAGE value="&#10;add tests for method: isPasswordCorrect();&#10;complete the method" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;add tests for method: isPasswordCorrect();&#10;complete the method" />
+    <MESSAGE value="modify the isPasswordCorrect();&#10;modify the main class" />
+    <MESSAGE value="modify the isPasswordCorrect();&#10;modify the logi() in main class" />
+    <MESSAGE value="modify the isPasswordCorrect();&#10;modify the login() in main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify the isPasswordCorrect();&#10;modify the login() in main class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1966" y="277" key="#AppTest" timestamp="1581675559566">
@@ -526,12 +543,12 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="2131" y="205" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582083466985">
+    <state x="2131" y="205" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582083498484">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="2231" y="254" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567685841" />
     <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252622563" />
-    <state x="2131" y="205" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083466985" />
+    <state x="2131" y="205" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083498484" />
     <state x="2231" y="269" key="CommitChangelistDialog2/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581304813518" />
     <state x="2131" y="225" key="CommitChangelistDialog2/40.23.1400.877/1440.87.1920.1057@1440.87.1920.1057" timestamp="1581736072640" />
     <state x="1972" y="326" width="1152" height="720" key="DiffContextDialog" timestamp="1581588321168">
@@ -539,41 +556,41 @@
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
     <state x="1972" y="326" width="1152" height="720" key="DiffContextDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581588321168" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1582083374846">
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1582083534610">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656540" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616252" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083374846" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534610" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836953" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704087" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1582083374845">
+    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1582083534608">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616250" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083374845" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534608" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581052143581" />
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836951" />
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1582083374844">
+    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1582083534607">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656538" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616249" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083374844" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534607" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581052143580" />
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836951" />
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1582083374846">
+    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1582083534609">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616251" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083374846" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534609" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581052143582" />
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836952" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
