@@ -4,6 +4,7 @@ package com.twu.biblioteca;
 import java.util.Scanner;
 
 public class BibliotecaApp {
+    private static Checkout checkoutBooks = new CheckOutBooks();
 
     private static BookLists bookLists = new BookLists();
     private static Movies movies = new Movies();
@@ -144,7 +145,7 @@ public class BibliotecaApp {
                         // check availability
                         if (bookLists.isAvailable(checkouBookInput)){
                             user.recordBookCheckout(checkouBookInput,userName);
-                            bookLists.checkOutABook(checkouBookInput);
+                            checkoutBooks.checkOut(checkouBookInput);
                             System.out.println("<<"+checkouBookInput+">>"+"\nchecked out successfully\nThank you, enjoy the book\n\n");
                         }else
                         {
