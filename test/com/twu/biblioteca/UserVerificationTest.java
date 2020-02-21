@@ -1,10 +1,8 @@
 package com.twu.biblioteca;
 
-import org.junit.Assert;
+
 import org.junit.Before;
 import org.junit.Test;
-import sun.tools.tree.NewArrayExpression;
-
 import static org.junit.Assert.*;
 
 public class UserVerificationTest {

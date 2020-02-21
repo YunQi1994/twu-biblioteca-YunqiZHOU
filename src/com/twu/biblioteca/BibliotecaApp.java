@@ -4,13 +4,14 @@ package com.twu.biblioteca;
 import java.util.Scanner;
 
 public class BibliotecaApp {
-    private static Checkout checkoutBooks = new CheckOutBooks();
 
     private static BookLists bookLists = new BookLists();
     private static Movies movies = new Movies();
     private static User user = new User();
     private static UserVerification userVerification = new UserVerification(user);
     private static String userName;
+    private static Checkout checkoutBooks = new CheckOutBooks(bookLists);
+
     public static void main(String[] args) {
 
 

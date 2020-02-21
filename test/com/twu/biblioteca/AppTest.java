@@ -41,7 +41,7 @@ public class AppTest {
     }
 
     @Test
-    public void shouldRemoveABookFromLibraryWhenUserDoCheckOut(){
+    public void shouldCheckABookAsBorrowedWhenUserDoCheckOut(){
 
         String bookTitle = "book1";
         String[][] expect = {
