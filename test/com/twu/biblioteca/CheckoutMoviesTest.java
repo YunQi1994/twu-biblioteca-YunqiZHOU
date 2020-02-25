@@ -11,7 +11,7 @@ public class CheckoutMoviesTest {
     @Before
     public void setUp(){
         movies = new Movies();
-        checkoutMovies = new CheckoutMovies(movies);
+        checkoutMovies = new CheckoutMovies();
 
     }
 

@@ -1,11 +1,9 @@
 package com.twu.biblioteca;
 
 public class CheckoutMovies implements Checkout {
-    private Movies movies;
+    private Movies movies = new Movies();
 
-    public CheckoutMovies(Movies movies){
-        this.movies = movies;
-    }
+
     @Override
     public void checkOut(String movieTitle) {
         String[][] movieList = movies.getMovies();

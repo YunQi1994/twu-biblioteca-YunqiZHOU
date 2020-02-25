@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4b3f1f-a698-4cb2-ae3d-5c168b2f45c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutMovies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutBooksTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckoutMoviesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserVerificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BookLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckoutMovies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckoutMoviesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckoutMoviesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -71,7 +68,7 @@
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutMoviesTest.shouldCheckoutAMovieAsBorrowedAfterCheckout">
+  <component name="RunManager" selected="JUnit.ManagerTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -132,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserVerificationTest.shouldLogUserOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -141,20 +138,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserVerificationTest" />
-      <option name="METHOD_NAME" value="shouldLogUserOn" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManagerTest" />
         <item itemvalue="JUnit.CheckoutMoviesTest.shouldCheckoutAMovieAsBorrowedAfterCheckout" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.CheckOutBooksTest" />
         <item itemvalue="JUnit.CheckOutBooksTest.shouldCheckoutABookAsBorrowedAfterCheckout" />
-        <item itemvalue="JUnit.UserVerificationTest.shouldLogUserOn" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582171585415</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="split checkout funtions from BookLists and Movies to CheckOutBooks and CheckoutMovies which implement interface Checkout;&#10;&#10;add tests for those two classes.">
+      <created>1582270432039</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1582270432039</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use switch instead of if\else" />
     <MESSAGE value="add quit variable to control wihle loop" />
     <MESSAGE value="&#10;check whether a book is still available in library" />
     <MESSAGE value="return true(false) when the book is (not) available in library" />
@@ -526,7 +528,8 @@
     <MESSAGE value="modify the isPasswordCorrect();&#10;modify the login() in main class" />
     <MESSAGE value="clean no use methods in class User" />
     <MESSAGE value="build interface Checkout&#10;user CheckOutBooks to implement checkout function" />
-    <option name="LAST_COMMIT_MESSAGE" value="build interface Checkout&#10;user CheckOutBooks to implement checkout function" />
+    <MESSAGE value="split checkout funtions from BookLists and Movies to CheckOutBooks and CheckoutMovies which implement interface Checkout;&#10;&#10;add tests for those two classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="split checkout funtions from BookLists and Movies to CheckOutBooks and CheckoutMovies which implement interface Checkout;&#10;&#10;add tests for those two classes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1966" y="277" key="#AppTest" timestamp="1581675559566">
@@ -546,10 +549,11 @@
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="1540" y="164" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581590204048" />
-    <state x="-1147" y="-11" key="#com.intellij.ide.util.MemberChooser" timestamp="1582268546506">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state x="-1147" y="179" key="#com.intellij.ide.util.MemberChooser" timestamp="1582613450562">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
     <state x="-1147" y="-11" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582268546506" />
+    <state x="-1147" y="179" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582613450562" />
     <state x="2261" y="347" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1581237435601">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
@@ -567,10 +571,10 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2458" y="475" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581224134493" />
-    <state x="-1229" y="-122" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582171585276">
+    <state x="-1229" y="-122" width="734" height="825" key="CommitChangelistDialog2" timestamp="1582270431877">
       <screen x="-1920" y="-263" width="1920" height="1080" />
     </state>
-    <state x="-1229" y="-122" key="CommitChangelistDialog2/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582171585276" />
+    <state x="-1229" y="-122" key="CommitChangelistDialog2/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582270431877" />
     <state x="2231" y="254" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567685841" />
     <state x="2495" y="358" width="734" height="825" key="CommitChangelistDialog2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252622563" />
     <state x="2131" y="205" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083574827" />
@@ -581,10 +585,11 @@
     </state>
     <state x="2149" y="349" key="DiffContextDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581075921215" />
     <state x="1972" y="326" width="1152" height="720" key="DiffContextDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581588321168" />
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1582270300315">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom" timestamp="1582614114228">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582270300315" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582280595846" />
+    <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582614114228" />
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656540" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616252" />
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534610" />
@@ -592,10 +597,11 @@
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567836953" />
     <state width="2518" height="256" key="GridCell.Tab.0.bottom/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704087" />
     <state width="1878" height="181" key="GridCell.Tab.0.bottom/43.23.1397.877/1440.87.1920.1057@1440.87.1920.1057" timestamp="1582083671508" />
-    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1582270300313">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center" timestamp="1582614114226">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582270300313" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582280595845" />
+    <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582614114226" />
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616250" />
     <state width="1878" height="181" key="GridCell.Tab.0.center/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534608" />
@@ -604,10 +610,11 @@
     <state width="2518" height="439" key="GridCell.Tab.0.center/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331911" />
     <state width="2518" height="256" key="GridCell.Tab.0.center/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
     <state width="1878" height="181" key="GridCell.Tab.0.center/43.23.1397.877/1440.87.1920.1057@1440.87.1920.1057" timestamp="1582083671508" />
-    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1582270300311">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left" timestamp="1582614114225">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582270300311" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582280595844" />
+    <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582614114225" />
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656538" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616249" />
     <state width="1878" height="181" key="GridCell.Tab.0.left/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534607" />
@@ -616,10 +623,11 @@
     <state width="2518" height="439" key="GridCell.Tab.0.left/41.23.1399.877/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581215331889" />
     <state width="2518" height="256" key="GridCell.Tab.0.left/41.23.1399.877/1440.23.2560.1417@1440.23.2560.1417" timestamp="1581253704086" />
     <state width="1878" height="181" key="GridCell.Tab.0.left/43.23.1397.877/1440.87.1920.1057@1440.87.1920.1057" timestamp="1582083671508" />
-    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1582270300314">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right" timestamp="1582614114227">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
-    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582270300314" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582280595845" />
+    <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582614114227" />
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581567656539" />
     <state width="2518" height="256" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581252616251" />
     <state width="1878" height="181" key="GridCell.Tab.0.right/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582083534609" />
@@ -652,10 +660,11 @@
     </state>
     <state x="1806" y="126" key="SettingsEditor/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581228967528" />
     <state x="243" y="100" key="SettingsEditor/43.23.1397.877@43.23.1397.877" timestamp="1581046838623" />
-    <state x="-1495" y="151" key="com.intellij.ide.util.TipDialog" timestamp="1582261370396">
-      <screen x="-1920" y="-263" width="1920" height="1080" />
+    <state x="-1495" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1582607837788">
+      <screen x="-1920" y="-73" width="1920" height="1080" />
     </state>
     <state x="-1495" y="151" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.-263.1920.1080@-1920.-263.1920.1080" timestamp="1582261370396" />
+    <state x="-1495" y="341" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.-73.1920.1080@-1920.-73.1920.1080" timestamp="1582607837788" />
     <state x="1865" y="399" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1581560637160" />
     <state x="2087" y="464" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581253830356" />
     <state x="1865" y="478" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1582078650882" />
@@ -695,20 +704,6 @@
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
     <state x="2834" y="449" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1581239746229" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/test/com/twu/biblioteca/CheckoutMoviesTest.java</url>
-          <line>18</line>
-          <properties class="com.twu.biblioteca.CheckoutMoviesTest" method="shouldCheckoutAMovieAsBorrowedAfterCheckout">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/biblioteca$BibliotecaApp.ic" NAME="BibliotecaApp Coverage Results" MODIFIED="1581227202094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
