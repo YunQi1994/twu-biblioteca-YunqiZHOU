@@ -18,7 +18,7 @@ public class ManagerTest {
         assertEquals("borrowed",bookLists.getBookList()[0][3]);
     }
     @Test
-    public void reurnABook(){
+    public void returnABook(){
         manager.performReturn("book1");
 
         assertEquals("available", bookLists.getBookList()[0][3]);
